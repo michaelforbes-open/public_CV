@@ -1,4 +1,4 @@
-# GitHub Action for converting CV from Markdown to PDF
+# GitHub Action for converting CV from Markdown to PDF (Manual Install Method)
 name: Create CV PDF
 
 # Run this workflow every time a change is pushed to the 'main' branch
@@ -20,19 +20,23 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      # Step 2: Use the official Pandoc action to convert the file
-      - name: Convert Markdown to PDF
-        uses: pandoc/pandoc-action@v4
-        with:
-          args: >- # Use '>' for multi-line arguments
-            --standalone
-            --from=markdown
-            --to=pdf
-            --output=Michael_Forbes_CV.pdf
-            --variable=geometry:margin=1in
-            README.md
+      # Step 2: Install Pandoc and the necessary LaTeX packages
+      # This step installs the conversion tools directly on the runner
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-latex-extra
 
-      # Step 3: Upload the generated PDF as a build artifact
+      # Step 3: Run the Pandoc command to convert the file
+      - name: Convert Markdown to PDF
+        run: |
+          pandoc README.md \
+            --from=markdown \
+            --to=pdf \
+            --output=Michael_Forbes_CV.pdf \
+            --variable=geometry:margin=1in
+
+      # Step 4: Upload the generated PDF as a build artifact
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
