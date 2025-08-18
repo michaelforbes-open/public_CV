@@ -20,24 +20,22 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      # Step 2: Use a pre-built action to convert the Markdown file to PDF
+      # Step 2: Use the official Pandoc action to convert the file
       - name: Convert Markdown to PDF
-        uses: baileythegreen/action-markdown-to-pdf@v1
+        uses: pandoc/pandoc-action@v4
         with:
-          # The input file to convert (e.g., your CV in Markdown)
-          input_file: README.md
-          # The name of the output PDF file
-          output_file: Michael_Forbes_CV.pdf
-          # Optional: Add extra arguments for Pandoc for more customization
-          # For example, to use a different font or adjust margins
-          # pandoc_args: "--variable=mainfont:Roboto --variable=geometry:margin=1in"
+          args: >- # Use '>' for multi-line arguments
+            --standalone
+            --from=markdown
+            --to=pdf
+            --output=Michael_Forbes_CV.pdf
+            --variable=geometry:margin=1in
+            README.md
 
       # Step 3: Upload the generated PDF as a build artifact
-      # This makes the PDF downloadable from the Actions tab
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
-          # The name of the artifact to be uploaded
           name: CV-PDF
-          # The path to the file(s) to upload
           path: Michael_Forbes_CV.pdf
+
