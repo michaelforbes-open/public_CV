@@ -1,5 +1,5 @@
-# GitHub Action for converting CV from Markdown to PDF (Manual Install Method)
-name: Create CV PDF
+# GitHub Action to create a PDF and commit it to the repository
+name: Build and Commit CV PDF
 
 # Run this workflow every time a change is pushed to the 'main' branch
 on:
@@ -7,21 +7,20 @@ on:
     branches:
       - main
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "convert_to_pdf"
-  convert_to_pdf:
-    # The type of runner that the job will run on
+  build_and_commit_pdf:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # Add this permissions block to allow the action to write to the repository
+    permissions:
+      contents: write
+
     steps:
-      # Step 1: Check out your repository code so the workflow can access it
+      # Step 1: Check out your repository code
       - name: Check out repository
         uses: actions/checkout@v4
 
       # Step 2: Install Pandoc and the necessary LaTeX packages
-      # This step installs the conversion tools directly on the runner
       - name: Install Pandoc and LaTeX
         run: |
           sudo apt-get update
@@ -36,10 +35,32 @@ jobs:
             --output=Michael_Forbes_CV.pdf \
             --variable=geometry:margin=1in
 
-      # Step 4: Upload the generated PDF as a build artifact
+      # Step 4: Configure Git
+      # Sets the user name and email for the commit
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      # Step 5: Commit and push the generated PDF
+      - name: Commit and Push PDF
+        run: |
+          git pull  # Ensure we have the latest changes before committing
+          git add Michael_Forbes_CV.pdf
+          # Use 'git diff-index' to see if there are any changes to commit
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Automated CV PDF build [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+          
+      # Step 6: Upload the generated PDF as a build artifact
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
+          name: CV-PDF
+          path: Michael_Forbes_CV.pdf```        with:
           name: Michael_Forbes_CV
           path: Michael_Forbes_CV.pdf
 
