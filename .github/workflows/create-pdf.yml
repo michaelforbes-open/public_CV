@@ -11,7 +11,7 @@ jobs:
   build_and_commit_pdf:
     runs-on: ubuntu-latest
 
-    # Add this permissions block to allow the action to write to the repository
+    # Grant permissions for the action to write to the repository
     permissions:
       contents: write
 
@@ -35,19 +35,18 @@ jobs:
             --output=Michael_Forbes_CV.pdf \
             --variable=geometry:margin=1in
 
-      # Step 4: Configure Git
-      # Sets the user name and email for the commit
+      # Step 4: Configure Git for the commit
       - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      # Step 5: Commit and push the generated PDF
+      # Step 5: Commit and push the generated PDF if it has changed
       - name: Commit and Push PDF
         run: |
-          git pull  # Ensure we have the latest changes before committing
+          git pull
           git add Michael_Forbes_CV.pdf
-          # Use 'git diff-index' to see if there are any changes to commit
+          # Check if there are any changes to commit
           if ! git diff-index --quiet HEAD; then
             git commit -m "Automated CV PDF build [skip ci]"
             git push
@@ -55,12 +54,9 @@ jobs:
             echo "No changes to commit."
           fi
           
-      # Step 6: Upload the generated PDF as a build artifact
+      # Step 6 (Optional): Upload the PDF as a downloadable artifact
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: CV-PDF
-          path: Michael_Forbes_CV.pdf```        with:
-          name: Michael_Forbes_CV
           path: Michael_Forbes_CV.pdf
-
