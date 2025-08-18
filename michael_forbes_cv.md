@@ -1,31 +1,31 @@
 # Michael James Forbes
-*Technical Communications & Marketing Strategist*
+*Technical Communications & Marketing Strategist*  
 
-Czernica, Wrocław County, Poland | +48 722 369 494 | m.forbes2008@gmail.com | [linkedin.com/in/1michaelforbes](https://linkedin.com/in/1michaelforbes) | https://github.com/michaelforbes-open/public_CV 
+Czernica, Wrocław County, Poland | +48 722 369 494 | m.forbes2008@gmail.com | [linkedin.com/in/1michaelforbes](https://linkedin.com/in/1michaelforbes) | https://github.com/michaelforbes-open/public_CV   
 
-*Dual British & Polish Citizen | Full right to work in the UK & EU without restriction*
+*Dual British & Polish Citizen | Full right to work in the UK & EU without restriction*  
 
 ---
 
-## Professional Summary
+## Professional Summary  
 
-A Technical Communications & Marketing Strategist who drives revenue and investment by translating complex technical concepts into clear, compelling narratives. Proven success in authoring high-stakes documentation for major industry leaders for internal and external use, developing multi-million euro project proposals, and leading international market expansion. An expert liaison who ensures that engineering, sales, and leadership teams are perfectly aligned.
+A Technical Communications & Marketing Strategist who drives revenue and investment by translating complex technical concepts into clear, compelling narratives. Proven success in authoring high-stakes documentation for major industry leaders for internal and external use, developing multi-million euro project proposals, and leading international market expansion. An expert liaison who ensures that engineering, sales, and leadership teams are perfectly aligned.  
 
 **Key Project Highlight: Tallinn Edutainment Attraction & Linnahall Redevelopment**
-- Led the conceptual design for a €150M edutainment attraction, incorporating a large oceanarium and a hotel on wasteland adjacent to the Port of Tallinn, integrating the redevelopment of the historic Linnahall.
-- Authored the complete project framework, from initial architectural concepts to a detailed investment plan, securing high-level interest with the official support of the Polish government.
-- Pioneered the project and secured foundational buy-in from the Estonian Government, the Port of Tallinn, and international investors, bringing the initiative to a successful hand-off point for formal negotiations.
+- Led the conceptual design for a €150M edutainment attraction, incorporating a large oceanarium and a hotel on wasteland adjacent to the Port of Tallinn, integrating the redevelopment of the historic Linnahall.  
+- Authored the complete project framework, from initial architectural concepts to a detailed investment plan, securing high-level interest with the official support of the Polish government.  
+- Pioneered the project and secured foundational buy-in from the Estonian Government, the Port of Tallinn, and international investors, bringing the initiative to a successful hand-off point for formal negotiations.  
 
 ---
 
 ## Work Experience
 
-### **Marketing Specialist** | Kiwee Software, Wrocław, Poland
-*April – July 2025*
-- Drove a 50% increase in LinkedIn followers within six weeks through targeted content creation and engagement strategies.
-- Authored in-depth technical blog posts on complex software subjects to enhance the company's content marketing efforts.
-- Proactively implemented and managed key analytics tools, including HotJar and Ahrefs, to generate actionable market and user behavior insights.
-- Identified and presented new market growth opportunities and potential client leads during strategic planning meetings.
+### **Marketing Specialist** | Kiwee Software, Wrocław, Poland  
+*April – July 2025*  
+- Drove a 50% increase in LinkedIn followers within six weeks through targeted content creation and engagement strategies.  
+- Authored in-depth technical blog posts on complex software subjects to enhance the company's content marketing efforts.  
+- Proactively implemented and managed key analytics tools, including HotJar and Ahrefs, to generate actionable market and user behavior insights.  
+- Identified and presented new market growth opportunities and potential client leads during strategic planning meetings.  
 
 ### **Technical Writer II** | Antmicro, Wrocław, Poland
 *November 2023 – March 2025*
