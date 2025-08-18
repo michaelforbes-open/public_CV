@@ -1,7 +1,7 @@
 # Michael James Forbes
 *Technical Communications & Marketing Strategist*
 
-Czernica, Wrocław County, Poland | +48 722 369 494 | m.forbes2008@gmail.com | [linkedin.com/in/1michaelforbes](https://linkedin.com/in/1michaelforbes)
+Czernica, Wrocław County, Poland | +48 722 369 494 | m.forbes2008@gmail.com | [linkedin.com/in/1michaelforbes](https://linkedin.com/in/1michaelforbes) | https://github.com/michaelforbes-open/public_CV 
 
 *Dual British & Polish Citizen | Full right to work in the UK & EU without restriction*
 
