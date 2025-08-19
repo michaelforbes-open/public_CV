@@ -6,7 +6,7 @@ Portfolio: https://github.com/michaelforbes-open/public_CV
 
 *Dual British & Polish Citizen | Full right to work in the UK & EU without restriction,  work permit not needed*  
 
-_Last updated: 19 August 2025 at 14:04 UTC_
+_Last updated: 19 August 2025 at 14:52 UTC_
 
 ---
  
@@ -82,7 +82,7 @@ A Technical Communications & Marketing Strategist who drives revenue and investm
 **Technical & Marketing**  
 - **Content & Strategy:** Technical Writing, Content Strategy, Social Media Management, Sales Enablement, SEO, Copywriting & Editing  
 - **Marketing & Analytics Tools:** Google Analytics, Ahrefs, HotJar, Mailchimp  
-- **Developer & IT Tools:** Linux (Debian-based), Git, Jira, VSCode  
+- **Developer & IT Tools:** Linux (Debian-based), Git, Jira, VSCode (including Markdown) 
 - **Productivity Suites:** Google Workspace (including AI-powered task creation and automation with Gemini), Microsoft Office  
 
 **Core Competencies**  
