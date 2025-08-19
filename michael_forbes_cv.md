@@ -4,9 +4,9 @@
 Czernica, Wrocław County, Poland | +48 722 369 494 | m.forbes2008@gmail.com | [linkedin.com/in/1michaelforbes](https://linkedin.com/in/1michaelforbes) 
 Portfolio: https://github.com/michaelforbes-open/public_CV   
 
-*Dual British & Polish Citizen | Full right to work in the UK & EU without restriction,  work permit not needed*  
+*Dual British & Polish Citizen | Full right to work in the UK & EU without restriction,  work permit not needed or required*  
 
-_Last updated: 19 August 2025 at 19:23 UTC_
+_Last updated: 19 August 2025 at 19:30 UTC_
 
 ---
  
