@@ -1,5 +1,5 @@
 # GitHub Action to create a PDF and commit it to the repository
-name: Build and Commit CV PDF
+name: Markdown to PDF GitHub Action
 
 # Run this workflow every time a change is pushed to the 'main' branch
 on:
