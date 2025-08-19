@@ -26,7 +26,8 @@ jobs:
       - name: Inject Date and Time
         run: |
           COMMIT_DATE=$(git log -1 --format=%cd --date=format:'%d %B %Y at %H:%M %Z')
-          sed -i "s|DATE_PLACEHOLDER|$COMMIT_DATE|g" michael_forbes_cv.md
+          # This command now finds the entire "Last updated" line and replaces it
+          sed -i "s|_Last updated:.*|_Last updated: $COMMIT_DATE_|g" michael_forbes_cv.md
 
       # Step 3: Install Pandoc and the necessary LaTeX packages
       - name: Install Pandoc and LaTeX
