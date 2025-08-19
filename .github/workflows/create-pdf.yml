@@ -27,7 +27,11 @@ jobs:
       # Step 2: Inject Date and Time into the Markdown file
       - name: Inject Date and Time
         run: |
-          COMMIT_DATE=$(git log -1 --format=%cd --date=format:'%d %B %Y at %H:%M %Z')
+          # Use the reliable GitHub Actions context to get the commit timestamp
+          TIMESTAMP="${{ github.event.head_commit.timestamp }}"
+          # Use the 'date' utility to format the timestamp nicely
+          COMMIT_DATE=$(date -d "$TIMESTAMP" --utc +"%d %B %Y at %H:%M %Z")
+          # Replace the placeholder line with the newly formatted date
           sed -i "s|_Last updated:.*|_Last updated: $COMMIT_DATE_|g" michael_forbes_cv.md
 
       # Step 3: Install Pandoc and the necessary LaTeX packages
