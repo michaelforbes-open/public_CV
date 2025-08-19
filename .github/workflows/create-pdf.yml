@@ -20,13 +20,14 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetches all history for all branches and tags
+          # This token is required to push to the branch
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0 # Fetches all history
 
       # Step 2: Inject Date and Time into the Markdown file
       - name: Inject Date and Time
         run: |
           COMMIT_DATE=$(git log -1 --format=%cd --date=format:'%d %B %Y at %H:%M %Z')
-          # This command now finds the entire "Last updated" line and replaces it
           sed -i "s|_Last updated:.*|_Last updated: $COMMIT_DATE_|g" michael_forbes_cv.md
 
       # Step 3: Install Pandoc and the necessary LaTeX packages
@@ -44,27 +45,26 @@ jobs:
             --output=Michael_Forbes_CV.pdf \
             --variable=geometry:margin=1in
 
-      # Step 5: Upload the PDF as a downloadable artifact (Moved earlier)
+      # Step 5: Upload the PDF as a downloadable artifact
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: CV-PDF
           path: Michael_Forbes_CV.pdf
 
-      # Step 6: Configure Git for the commit
-      - name: Configure Git
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-      # Step 7: Commit and push the generated PDF and updated MD file
+      # Step 6: Commit, Amend, and Force Push the changes
       - name: Commit and Push Files
         run: |
+          # Configure Git to use the original commit's author
+          git config user.name "$(git log -1 --pretty=format:'%an')"
+          git config user.email "$(git log -1 --pretty=format:'%ae')"
+          
+          # Add the modified files
           git add michael_forbes_cv.md Michael_Forbes_CV.pdf
-          if ! git diff-index --quiet --cached HEAD; then
-            git commit -m "Automated CV build in PDF"
-            git pull --rebase
-            git push
-          else
-            echo "No changes to commit."
-          fi
+          
+          # Amend the previous commit, keeping the original message
+          # This adds the new files to your original commit
+          git commit --amend --no-edit
+          
+          # Force push the amended commit to the branch
+          git push --force
