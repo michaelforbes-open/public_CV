@@ -5,7 +5,7 @@ Czernica, Wrocław County, Poland | +48 722 369 494 | m.forbes2008@gmail.com | [
 
 *Dual British & Polish Citizen | Full right to work in the UK & EU without restriction*  
 
-_Last updated: 
+_Last updated: DATE_PLACEHOLDER_
 
 ---
  
