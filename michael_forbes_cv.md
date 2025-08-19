@@ -6,7 +6,7 @@ Portfolio: https://github.com/michaelforbes-open/public_CV
 
 *Dual British & Polish Citizen | Full right to work in the UK & EU without restriction,  work permit not needed*  
 
-_Last updated: 19 August 2025 at 14:52 UTC_
+_Last updated: 19 August 2025 at 15:20 UTC_
 
 ---
  

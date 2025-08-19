@@ -1,8 +1,8 @@
 # Michael Forbes - public CV and portfolio
 
-Welcome to my public portfolio! My CV is available in both [Markdown](https://github.com/michaelforbes-open/public_CV/blob/main/michael_forbes_cv.md) and [PDF](https://github.com/michaelforbes-open/public_CV/blob/main/Michael_Forbes_CV.pdf) format. The PDF is generated automatically from the Markdown using a [Markdown to PDF GitHub Action](https://github.com/michaelforbes-open/public_CV/blob/main/.github/workflows/create-pdf.yml), created and refined with the assistance of [Google Gemini](https://aistudio.google.com/). 
+Welcome to my public portfolio! My CV is available in [Markdown](https://github.com/michaelforbes-open/public_CV/blob/main/michael_forbes_cv.md), [PDF](https://github.com/michaelforbes-open/public_CV/blob/main/Michael_Forbes_CV.pdf) and [DOCX](https://github.com/michaelforbes-open/public_CV/blob/main/Michael_Forbes_CV.docx) format. The PDF and DOCX formats are generated automatically from the Markdown using a [Markdown to PDF/DOCX GitHub Action](https://github.com/michaelforbes-open/public_CV/blob/main/.github/workflows/create-pdf.yml), created and refined with the assistance of [Google Gemini](https://aistudio.google.com/). 
 
-This repository also contains samples of my work, based on my personal interests. 
+In this repository, you can find samples of my work and the background in which they were created. This repository also contains samples of my work, based on my personal interests. 
 
 Feel free to reach out:
 
