@@ -13,6 +13,7 @@ jobs:
     # Grant permissions for the action to write to the repository
     permissions:
       contents: write
+      workflows: write #
 
     steps:
       # Step 1: Check out repository with full history
