@@ -42,12 +42,13 @@ jobs:
             --output=Michael_Forbes_CV.pdf \
             --variable=geometry:margin=1in
 
-      # Step 5: Convert Markdown to DOCX
+# Step 5: Convert Markdown to DOCX
       - name: Convert Markdown to DOCX
         run: |
           pandoc michael_forbes_cv.md \
             --from=markdown \
             --to=docx \
+            --reference-doc=reference.docx \
             --output=Michael_Forbes_CV.docx
 
       # Step 6: Upload PDF artifact
