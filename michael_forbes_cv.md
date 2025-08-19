@@ -1,4 +1,4 @@
-# Michael James Forbes
+# Michael Forbes
 *Technical Communications & Marketing Strategist*  
 
 Czernica, Wrocław County, Poland | +48 722 369 494 | m.forbes2008@gmail.com | [linkedin.com/in/1michaelforbes](https://linkedin.com/in/1michaelforbes) 
