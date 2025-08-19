@@ -1,21 +1,20 @@
-# GitHub Action to create a PDF and commit it to the repository, designed with the assistance of Google Gemini
-name: Markdown to PDF CV converter
+name: Build and commit CV in PDF format from raw Markdown, created with the assistance of Google Gemini
 
-# Run this workflow every time a change is pushed to the 'main' branch
+# This workflow runs every time a change is pushed to the 'main' branch
 on:
   push:
     branches:
       - main
 
 jobs:
-  build_pdf_from_md:
+  build_and_commit_pdf:
     runs-on: ubuntu-latest
 
     # Grant permissions for the action to write to the repository
     permissions:
       contents: write
 
- steps:
+    steps:
       # Step 1: Check out repository with full history
       - name: Check out repository
         uses: actions/checkout@v4
@@ -27,7 +26,6 @@ jobs:
       - name: Inject Date and Time
         run: |
           # This version pipes commands together to avoid shell variable issues.
-          # It gets the date, formats it, and uses it in the sed command in one step.
           sed -i "s|_Last updated:.*|_Last updated: $(date -d "@$(git log -1 --pretty=%ct)" --utc +"%d %B %Y at %H:%M %Z")_|g" michael_forbes_cv.md
 
       # Step 3: Install Pandoc and the necessary LaTeX packages
