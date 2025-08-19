@@ -85,7 +85,7 @@ A Technical Communications & Marketing Strategist who drives revenue and investm
 - **Productivity Suites:** Google Workspace (including AI-powered task creation and automation with Gemini), Microsoft Office  
 
 **Core Competencies**  
-- **Technical & Stakeholder Communication:** Expertly translating complex technical information for non-technical audiences—including investors, government officials, and sales teams—while accurately conveying business requirements to engineering teams.  
+- **Technical & Stakeholder Communication:** Expertly translating complex technical information for non-technical audiences, including investors, government officials, and sales teams while accurately conveying business requirements to engineering teams.  
 - **Conceptual Project Development:** Designing complex, large-scale projects from initial concept through to a full investment proposal.  
 - **Stakeholder Engagement & Management:** Building and maintaining relationships with diverse partners, including government bodies, investors, and technical teams.  
 - **Cross-Cultural Communication:** Leveraging exceptional intercultural skills to build rapport and facilitate negotiations with global partners.  
