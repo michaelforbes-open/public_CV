@@ -1,4 +1,4 @@
-name: Build and commit CV in PDF format from raw Markdown, created with the assistance of Google Gemini
+name: Build and commit CV in PDF format from Markdown
 
 # This workflow runs every time a change is pushed to the 'main' branch
 on:
