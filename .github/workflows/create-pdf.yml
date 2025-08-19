@@ -8,7 +8,7 @@ on:
       - main
 
 jobs:
-  build_and_commit_pdf:
+  build_and_commit_CV_in_pdf:
     runs-on: ubuntu-latest
 
     # Grant permissions for the action to write to the repository
@@ -47,7 +47,7 @@ jobs:
           git add Michael_Forbes_CV.pdf
           # Use diff-index to check if there are changes to commit
           if ! git diff-index --quiet --cached HEAD; then
-            git commit -m "Automated CV PDF build [skip ci]"
+            git commit -m "Automated build of CV in PDF"
             # Use pull with rebase to avoid merge conflicts
             git pull --rebase
             git push
