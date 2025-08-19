@@ -5,8 +5,10 @@ Czernica, Wrocław County, Poland | +48 722 369 494 | m.forbes2008@gmail.com | [
 
 *Dual British & Polish Citizen | Full right to work in the UK & EU without restriction*  
 
----
 _Last updated: DATE_PLACEHOLDER_  
+
+---
+ 
 ## Professional Summary  
 
 A Technical Communications & Marketing Strategist who drives revenue and investment by translating complex technical concepts into clear, compelling narratives. Proven success in authoring high-stakes documentation for major industry leaders for internal and external use, developing multi-million euro project proposals, and leading international market expansion. An expert liaison who ensures that engineering, sales, and leadership teams are perfectly aligned.  
