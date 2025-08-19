@@ -7,8 +7,8 @@ This repository also contains samples of my work, based on my personal interests
 Feel free to reach out:
 
 [e-mail](m.forbes2008@gmail.com)  
-[LinkedIn](https://www.linkedin.com/in/1michaelforbes/)
-9
+[LinkedIn](https://www.linkedin.com/in/1michaelforbes/)  
+
 I can also be found on various Discord servers as TheThirdFall, including on the [Zephyr Project](https://chat.zephyrproject.org/), [86Box](https://discord.gg/v5fCgFw), [eXoDOS](https://discord.gg/37FYaUZ) and in other emulation/simulation related servers. 
 
 **Selection of blogs published for commercial use by sales:**  
@@ -19,4 +19,4 @@ I can also be found on various Discord servers as TheThirdFall, including on the
 
 **Projects**
 
-[Tallinn Edutainment Project](https://github.com/michaelforbes-open/public_CV/tree/main/Tallinn)
+[Tallinn Edutainment Project](https://github.com/michaelforbes-open/public_CV/tree/main/Tallinn)  
