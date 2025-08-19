@@ -1,4 +1,4 @@
-name: Build and commit CV in PDF format from Markdown
+name: Build and commit CV in PDF and DOCX format from Markdown
 
 # This workflow runs every time a change is pushed to the 'main' branch
 on:
@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  build_and_commit_pdf:
+  build_and_commit_files:
     runs-on: ubuntu-latest
 
     # Grant permissions for the action to write to the repository
@@ -25,7 +25,6 @@ jobs:
       # Step 2: Inject Date and Time into the Markdown file
       - name: Inject Date and Time
         run: |
-          # This version pipes commands together to avoid shell variable issues.
           sed -i "s|_Last updated:.*|_Last updated: $(date -d "@$(git log -1 --pretty=%ct)" --utc +"%d %B %Y at %H:%M %Z")_|g" michael_forbes_cv.md
 
       # Step 3: Install Pandoc and the necessary LaTeX packages
@@ -34,7 +33,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-latex-extra
 
-      # Step 4: Run the Pandoc command to convert the file
+      # Step 4: Convert Markdown to PDF
       - name: Convert Markdown to PDF
         run: |
           pandoc michael_forbes_cv.md \
@@ -43,18 +42,35 @@ jobs:
             --output=Michael_Forbes_CV.pdf \
             --variable=geometry:margin=1in
 
-      # Step 5: Upload the PDF as a downloadable artifact
+      # Step 5: Convert Markdown to DOCX
+      - name: Convert Markdown to DOCX
+        run: |
+          pandoc michael_forbes_cv.md \
+            --from=markdown \
+            --to=docx \
+            --output=Michael_Forbes_CV.docx
+
+      # Step 6: Upload PDF artifact
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: CV-PDF
           path: Michael_Forbes_CV.pdf
 
-      # Step 6: Commit, Amend, and Force Push the changes
+      # Step 7: Upload DOCX artifact
+      - name: Upload DOCX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CV-DOCX
+          path: Michael_Forbes_CV.docx
+
+      # Step 8: Commit, Amend, and Force Push the changes
       - name: Commit and Push Files
         run: |
           git config user.name "$(git log -1 --pretty=format:'%an')"
           git config user.email "$(git log -1 --pretty=format:'%ae')"
-          git add michael_forbes_cv.md Michael_Forbes_CV.pdf
+          # --- MODIFIED LINE ---
+          # Add all three files to the commit
+          git add michael_forbes_cv.md Michael_Forbes_CV.pdf Michael_Forbes_CV.docx
           git commit --amend --no-edit
           git push --force
