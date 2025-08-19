@@ -1,4 +1,4 @@
-# public_CV
+# Michael Forbes - public CV and portfolio
 
 Welcome to my public portfolio! My CV is available in both [Markdown] and [PDF] format, while this repository contains samples of my work. 
 
