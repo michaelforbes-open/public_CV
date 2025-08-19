@@ -15,24 +15,20 @@ jobs:
     permissions:
       contents: write
 
-    steps:
+ steps:
       # Step 1: Check out repository with full history
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          # This token is required to push to the branch
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0 # Fetches all history
+          fetch-depth: 0
 
       # Step 2: Inject Date and Time into the Markdown file
       - name: Inject Date and Time
         run: |
-          # Get the UNIX timestamp of the latest commit. This is the most reliable method.
-          UNIX_TIMESTAMP=$(git log -1 --pretty=%ct)
-          # Format the UNIX timestamp into a human-readable string
-          COMMIT_DATE=$(date -d "@$UNIX_TIMESTAMP" --utc +"%d %B %Y at %H:%M %Z")
-          # Replace the placeholder line with the newly formatted date
-          sed -i "s|_Last updated:.*|_Last updated: $COMMIT_DATE_|g" michael_forbes_cv.md
+          # This version pipes commands together to avoid shell variable issues.
+          # It gets the date, formats it, and uses it in the sed command in one step.
+          sed -i "s|_Last updated:.*|_Last updated: $(date -d "@$(git log -1 --pretty=%ct)" --utc +"%d %B %Y at %H:%M %Z")_|g" michael_forbes_cv.md
 
       # Step 3: Install Pandoc and the necessary LaTeX packages
       - name: Install Pandoc and LaTeX
@@ -59,16 +55,8 @@ jobs:
       # Step 6: Commit, Amend, and Force Push the changes
       - name: Commit and Push Files
         run: |
-          # Configure Git to use the original commit's author
           git config user.name "$(git log -1 --pretty=format:'%an')"
           git config user.email "$(git log -1 --pretty=format:'%ae')"
-          
-          # Add the modified files
           git add michael_forbes_cv.md Michael_Forbes_CV.pdf
-          
-          # Amend the previous commit, keeping the original message
-          # This adds the new files to your original commit
           git commit --amend --no-edit
-          
-          # Force push the amended commit to the branch
           git push --force
