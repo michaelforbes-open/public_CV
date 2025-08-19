@@ -1,5 +1,5 @@
-# GitHub Action to create a PDF and commit it to the repository
-name: Markdown to PDF GitHub Action
+# GitHub Action to create a PDF and commit it to the repository, designed with the assistance of Google Gemini
+name: Markdown to PDF CV converter
 
 # Run this workflow every time a change is pushed to the 'main' branch
 on:
@@ -8,7 +8,7 @@ on:
       - main
 
 jobs:
-  build_and_commit_CV_in_pdf:
+  build_and_commit_pdf:
     runs-on: ubuntu-latest
 
     # Grant permissions for the action to write to the repository
@@ -20,13 +20,23 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      # Step 2: Install Pandoc and the necessary LaTeX packages
+      # --- NEW STEP STARTS HERE ---
+      # Step 2: Inject Date and Time into the Markdown file
+      - name: Inject Date and Time
+        run: |
+          # Get the current date and time from the latest commit
+          COMMIT_DATE=$(git log -1 --format=%cd --date=format:'%d %B %Y at %H:%M %Z')
+          # Use sed to find the placeholder and replace it with the date
+          # The use of a different separator (|) avoids issues with slashes in the date
+          sed -i "s|DATE_PLACEHOLDER|$COMMIT_DATE|g" michael_forbes_cv.md
+
+      # Step 3: Install Pandoc and the necessary LaTeX packages
       - name: Install Pandoc and LaTeX
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-latex-extra
 
-      # Step 3: Run the Pandoc command to convert the file
+      # Step 4: Run the Pandoc command to convert the file
       - name: Convert Markdown to PDF
         run: |
           pandoc michael_forbes_cv.md \
@@ -35,19 +45,20 @@ jobs:
             --output=Michael_Forbes_CV.pdf \
             --variable=geometry:margin=1in
 
-      # Step 4: Configure Git for the commit
+      # Step 5: Configure Git for the commit
       - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      # Step 5: Commit, Rebase, and Push the generated PDF
-      - name: Commit and Push PDF
+      # Step 6: Commit and push the generated PDF and updated MD file
+      - name: Commit and Push Files
         run: |
-          git add Michael_Forbes_CV.pdf
-          # Use diff-index to check if there are changes to commit
+          # Add both the markdown file (with the new date) and the new PDF
+          git add michael_forbes_cv.md Michael_Forbes_CV.pdf
+          # Check if there are any changes to commit
           if ! git diff-index --quiet --cached HEAD; then
-            git commit -m "Automated build of CV in PDF"
+            git commit -m "Automated CV PDF build [skip ci]"
             # Use pull with rebase to avoid merge conflicts
             git pull --rebase
             git push
@@ -55,9 +66,9 @@ jobs:
             echo "No changes to commit."
           fi
           
-      # Step 6 (Optional): Upload the PDF as a downloadable artifact
+      # Step 7 (Optional): Upload the PDF as a downloadable artifact
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: CV-PDF
-          path: Michael_Forbes_CV.pdf
+          path: Michael_Forbes_CV.pdf```
