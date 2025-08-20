@@ -30,13 +30,13 @@ jobs:
 
       - name: Convert Markdown to PDF
         run: |
-          # Use the correct extension to disable compact lists
-          pandoc michael_forbes_cv.md --from=markdown-compact_lists --to=pdf --output=Michael_Forbes_CV.pdf --variable=geometry:margin=1in
+          # Use the 'commonmark' flavor which supports the -compact_lists extension
+          pandoc michael_forbes_cv.md --from=commonmark-compact_lists --to=pdf --output=Michael_Forbes_CV.pdf --variable=geometry:margin=1in
 
       - name: Convert Markdown to DOCX
         run: |
-          # Use the correct extension here as well
-          pandoc michael_forbes_cv.md --from=markdown-compact_lists --to=docx --reference-doc=reference.docx --output=Michael_Forbes_CV.docx
+          # Use the 'commonmark' flavor here as well
+          pandoc michael_forbes_cv.md --from=commonmark-compact_lists --to=docx --reference-doc=reference.docx --output=Michael_Forbes_CV.docx
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
