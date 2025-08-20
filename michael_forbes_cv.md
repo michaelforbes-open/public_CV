@@ -6,7 +6,7 @@ Portfolio: github.com/michaelforbes-open/public_CV
 
 *Dual British & Polish Citizen | Full right to work in the UK & EU without restriction,  work permit not needed or required*  
 
-_Last updated: 20 August 2025 at 14:30 UTC_
+_Last updated: 20 August 2025 at 14:37 UTC_
 
 ---
  
@@ -106,4 +106,4 @@ A Technical Communications & Marketing Strategist who drives revenue and investm
 
 ## Additional Information
 
-- **Mobility:** Holder of a full Category B driving licence and available for work-related travel as required.  
+- **Mobility:** Holder of a full, clean Category B driving licence and available for work-related travel as required.  
