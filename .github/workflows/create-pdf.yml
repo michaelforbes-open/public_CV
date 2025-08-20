@@ -30,13 +30,13 @@ jobs:
 
       - name: Convert Markdown to PDF
         run: |
-          # The +list_items extension forces each list item to be a new paragraph
-          pandoc michael_forbes_cv.md --from=markdown+list_items --to=pdf --output=Michael_Forbes_CV.pdf --variable=geometry:margin=1in
+          # Use the correct extension to disable compact lists
+          pandoc michael_forbes_cv.md --from=markdown-compact_lists --to=pdf --output=Michael_Forbes_CV.pdf --variable=geometry:margin=1in
 
       - name: Convert Markdown to DOCX
         run: |
-          # The +list_items extension is added here as well
-          pandoc michael_forbes_cv.md --from=markdown+list_items --to=docx --reference-doc=reference.docx --output=Michael_Forbes_CV.docx
+          # Use the correct extension here as well
+          pandoc michael_forbes_cv.md --from=markdown-compact_lists --to=docx --reference-doc=reference.docx --output=Michael_Forbes_CV.docx
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
@@ -53,5 +53,4 @@ jobs:
           git add michael_forbes_cv.md Michael_Forbes_CV.pdf Michael_Forbes_CV.docx
           git commit --amend --no-edit
           git push --force
-
 
