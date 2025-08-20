@@ -6,7 +6,7 @@ Portfolio: github.com/michaelforbes-open/public_CV
 
 *Dual British & Polish Citizen | Full right to work in the UK & EU without restriction,  work permit not needed or required*  
 
-_Last updated: 20 August 2025 at 14:37 UTC_
+_Last updated: 20 August 2025 at 14:47 UTC_
 
 ---
  
@@ -98,9 +98,13 @@ A Technical Communications & Marketing Strategist who drives revenue and investm
 ## Interests & Causes
 
 - **Cultural & Historical Analysis:** Exploring the influence of international and linguistic borders, with a particular focus on the modern history of Yugoslavia.
+  
 - **Educational Equity & Research:** Advocating for equitable access to education by presenting academic papers at conferences on the topics of educational and linguistic rights.
+  
 - **Neurodiversity & Disability Advocacy:** Promoting the use of inclusive language and focusing on individual capabilities over preconceived labels.
-- **Endurance Cycling & Community Tutoring:** Exploring off-the-beaten-path trails and volunteering as an English tutor for local children.  
+  
+- **Endurance Cycling & Community Tutoring:** Exploring off-the-beaten-path trails and volunteering as an English tutor for local children.
+  
 
 ---
 
