@@ -95,8 +95,7 @@ A Technical Communications & Marketing Strategist who drives revenue and investm
 
 ---
 
-## Interests & Causes
-
+## **Interests & Causes**  
 **Cultural & Historical Analysis:** 
 - Exploring the influence of international and linguistic borders, with a particular focus on the modern history of Yugoslavia.  
 **Educational Equity & Research:**
