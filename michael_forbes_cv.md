@@ -6,7 +6,7 @@ Portfolio: github.com/michaelforbes-open/public_CV
 
 *Dual British & Polish Citizen | Full right to work in the UK & EU without restriction,  work permit not needed or required*  
 
-_Last updated: 20 August 2025 at 19:32 UTC_
+_Last updated: 20 August 2025 at 14:47 UTC_
 
 ---
  
@@ -73,37 +73,38 @@ A Technical Communications & Marketing Strategist who drives revenue and investm
 
 ## Skills
 
-**Languages**
+**Languages**  
+- **English:** Native / C2  
+- **Scots:** Native / C2  
+- **Polish:** Upper-Intermediate / B2  
+- **Catalan:** Basic / A1  
 
-- **English:** Native / C2
-- **Scots:** Native / C2
-- **Polish:** Upper-Intermediate / B2
-- **Catalan:** Basic / A1
+**Technical & Marketing**  
+- **Content & Strategy:** Technical Writing, Content Strategy, Social Media Management, Sales Enablement, SEO, Copywriting & Editing  
+- **Marketing & Analytics Tools:** Google Analytics, Ahrefs, HotJar, Mailchimp  
+- **Developer & IT Tools:** Linux (Debian-based), Git, Jira, VSCode (including Markdown) 
+- **Productivity Suites:** Google Workspace (including AI-powered task creation and automation with Gemini), Microsoft Office  
 
-**Technical & Marketing**
-
-- **Content & Strategy:** Technical Writing, Content Strategy, Social Media Management, Sales Enablement, SEO, Copywriting & Editing
-- **Marketing & Analytics Tools:** Google Analytics, Ahrefs, HotJar, Mailchip
-- **Developer & IT Tools:** Linux (Debian-based), Git, Jira, VSCode (including Markdown)
-- **Productivity Suites:** Google Workspace (including AI-powered task creation and automation with Gemini), Microsoft Office
-
-**Core Competencies**
-
-- **Technical & Stakeholder Communication:** Expertly translating complex technical information for non-technical audiences, including investors, government officials, and sales teams while accurately conveying business requirements to engineering teams.
-- **Conceptual Project Development:** Designing complex, large-scale projects from initial concept through to a full investment proposal.
-- **Stakeholder Engagement & Management:** Building and maintaining relationships with diverse partners, including government bodies, investors, and technical teams.
-- **Cross-Cultural Communication:** Leveraging exceptional intercultural skills to build rapport and facilitate negotiations with global partners.
-- **Customer Education Strategy:** Framing marketing and technical content to inform and empower potential clients.
-- **Public Speaking & Presentation**
+**Core Competencies**  
+- **Technical & Stakeholder Communication:** Expertly translating complex technical information for non-technical audiences, including investors, government officials, and sales teams while accurately conveying business requirements to engineering teams.  
+- **Conceptual Project Development:** Designing complex, large-scale projects from initial concept through to a full investment proposal.  
+- **Stakeholder Engagement & Management:** Building and maintaining relationships with diverse partners, including government bodies, investors, and technical teams.  
+- **Cross-Cultural Communication:** Leveraging exceptional intercultural skills to build rapport and facilitate negotiations with global partners.  
+- **Customer Education Strategy:** Framing marketing and technical content to inform and empower potential clients.  
+- **Public Speaking & Presentation**  
 
 ---
 
 ## Interests & Causes
 
 - **Cultural & Historical Analysis:** Exploring the influence of international and linguistic borders, with a particular focus on the modern history of Yugoslavia.
+  
 - **Educational Equity & Research:** Advocating for equitable access to education by presenting academic papers at conferences on the topics of educational and linguistic rights.
+  
 - **Neurodiversity & Disability Advocacy:** Promoting the use of inclusive language and focusing on individual capabilities over preconceived labels.
+  
 - **Endurance Cycling & Community Tutoring:** Exploring off-the-beaten-path trails and volunteering as an English tutor for local children.
+  
 
 ---
 
