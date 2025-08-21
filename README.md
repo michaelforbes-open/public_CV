@@ -21,5 +21,5 @@ I can also be found on various Discord servers as TheThirdFall, including on the
 
 [Tallinn Edutainment Project](https://github.com/michaelforbes-open/public_CV/tree/main/Tallinn)  
 
-**Case Studies**
+**Case Studies**  
 [RiscOS3 emulation in a business-critical environment](https://github.com/michaelforbes-open/public_CV/blob/main/Case_Studies/RiscOS3.md)
