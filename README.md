@@ -17,8 +17,7 @@ I can also be found on various Discord servers as TheThirdFall, including on the
 [https://antmicro.com/blog/2024/11/com-express-baseboard-type-7/](https://antmicro.com/blog/2024/11/com-express-baseboard-type-7/)  
 [European Accessibility Act: How to prepare your online store](https://kiwee.eu/blog/european-accessibility-act-online-store/)  
 
-**Projects**
-
+**Projects**  
 [Tallinn Edutainment Project](https://github.com/michaelforbes-open/public_CV/tree/main/Tallinn)  
 
 **Case Studies**  
