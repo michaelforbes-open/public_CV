@@ -2,11 +2,11 @@
 *Technical Communications & Marketing Strategist*  
 
 Czernica, Wrocław County, Poland | +48 722 369 494 | m.forbes2008@gmail.com | [linkedin.com/in/1michaelforbes](https://linkedin.com/in/1michaelforbes) 
-Portfolio: github.com/michaelforbes-open/public_CV   
+Portfolio: [github.com/michaelforbes-open/public_CV]   
 
 *Dual British & Polish Citizen | Full right to work in the UK & EU without restriction,  work permit not needed or required*  
 
-_Last updated: 21 August 2025 at 09:53 UTC_
+_Last updated: 21 August 2025 at 10:00 UTC_
 
 ---
  
