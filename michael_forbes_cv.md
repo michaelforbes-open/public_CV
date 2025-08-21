@@ -5,7 +5,7 @@ Czernica, Wrocław County, Poland | +48 722 369 494 | m.forbes2008@gmail.com | [
 Portfolio: [github.com/michaelforbes-open/public_CV](https://github.com/michaelforbes-open/public_CV)
 
 *Dual British & Polish Citizen | Full right to work in the UK & EU without restriction,  work permit not needed or required*  
-_Last updated: 21 August 2025 at 10:34 UTC_
+_Last updated: 21 August 2025 at 10:57 UTC_
 
 ---
  
@@ -39,9 +39,8 @@ A Technical Communications & Marketing Strategist who drives revenue and investm
 ### **English Teacher** | Calineczka i Przyjaciele, Kamieniec Wrocławski, Poland  
 *September 2020 – August 2023*  
 *(Undertaken part-time to maintain teaching qualifications before transitioning to full-time)*  
-- Developed and customized educational content and learning frameworks for multiple groups.  
 - Executed community marketing and public relations initiatives, representing the brand at public events to drive engagement and enrollment.  
-- Managed international partnership projects through the eTwinning platform, fostering cross-cultural collaboration.  
+- Managed international partnership projects through the eTwinning platform.  
 
 ### **Key Account Manager & Technical Writer** | PFI Global, Wrocław, Poland  
 *March 2016 – September 2022*  
@@ -81,7 +80,7 @@ A Technical Communications & Marketing Strategist who drives revenue and investm
 **Technical & Marketing**  
 - **Content & Strategy:** Technical Writing, Content Strategy, Social Media Management, Sales Enablement, SEO, Copywriting & Editing  
 - **Marketing & Analytics Tools:** Google Analytics, Ahrefs, HotJar, Mailchimp  
-- **Developer & IT Tools:** Linux (Debian-based), Git, Jira, VSCode (including Markdown) 
+- **Developer & IT Tools:** Linux (Debian-based), Git, Jira, Markdown, VSCode  
 - **Productivity Suites:** Google Workspace (including AI-powered task creation and automation with Gemini), Microsoft Office  
 
 **Core Competencies**  
@@ -90,7 +89,6 @@ A Technical Communications & Marketing Strategist who drives revenue and investm
 - **Stakeholder Engagement & Management:** Building and maintaining relationships with diverse partners, including government bodies, investors, and technical teams.  
 - **Cross-Cultural Communication:** Leveraging exceptional intercultural skills to build rapport and facilitate negotiations with global partners.  
 - **Customer Education Strategy:** Framing marketing and technical content to inform and empower potential clients.  
-- **Public Speaking & Presentation**  
 
 ---
 
@@ -109,4 +107,4 @@ A Technical Communications & Marketing Strategist who drives revenue and investm
 ## Additional Information
 **Mobility:** 
 - Holder of a full, clean Category B driving licence and available for work-related travel as required.  
-[^1] Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu tej oraz przyszłych rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).
+- Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu tej oraz przyszłych rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).
