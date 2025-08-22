@@ -2,5 +2,5 @@
 
 This repository contains a selection of reviews as part of my writing portfolio. 
 
-Links:
+Links:  
 [Retro eXo](https://www.retro-exo.com/) - click on the computer to get started!
