@@ -5,13 +5,13 @@ Czernica, Wrocław County, Poland | +48 722 369 494 | m.forbes2008@gmail.com | [
 Portfolio: [github.com/michaelforbes-open/public_CV](https://github.com/michaelforbes-open/public_CV)
 
 *Dual British & Polish Citizen | Full right to work in the UK & EU without restriction,  work permit not needed or required*  
-_Last updated: 25 August 2025 at 13:28 UTC_
+_Last updated: 01 September 2025 at 14:22 UTC_
 
 ---
  
 ## Professional Summary  
 
-A Technical Communications & Marketing Strategist who drives revenue and investment by translating complex technical concepts into clear, compelling narratives. Proven success in authoring high-stakes documentation for major industry leaders for internal and external use, developing multi-million euro project proposals, and leading international market expansion. An expert liaison who ensures that engineering, sales, and leadership teams are perfectly aligned.  
+A Technical Communications & Marketing Strategist who drives revenue and investment by translating complex technical concepts into clear, compelling narratives. Proven success in authoring high-stakes documentation for use major industry leaders (internal and external), developing multi-million euro project proposals, and leading international market expansion. An expert liaison who ensures that engineering, sales, and leadership teams are perfectly aligned.  
 
 **Key Project Highlight: Tallinn Edutainment Attraction & Linnahall Redevelopment**  
 - Led the conceptual design for a €150M edutainment attraction, incorporating a large oceanarium and a hotel on wasteland adjacent to the Port of Tallinn, integrating the redevelopment of the historic Linnahall.  
