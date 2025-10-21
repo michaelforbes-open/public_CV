@@ -60,7 +60,8 @@ gamegpu.com
 applevis.com
 pcgamer.com
 libretro.com
-blindhelp.net```
+blindhelp.net
+```
 
 ## 3. Linguistic and Technical Analysis
 
