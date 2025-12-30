@@ -1,12 +1,12 @@
-# Clear the emulation
+# Clear previous emulation state
 i @
 
-# Create the machine and name it 's32k'
+# Create machine with a specific name
 mach create "s32k"
 machine LoadPlatformDescription @scripts/s32k144.repl
 
-# Load the binary
+# Load the elf file
 sysbus LoadELF @firmware/vulnerable.elf
 
-# Log UART output to the Renode log so we can debug if needed
-sysbus.lpuart0 CreateExecutionTracing "uart-trace"
+# This allows the Robot Framework to hook into the UART
+showAnalyzer sysbus.lpuart0
