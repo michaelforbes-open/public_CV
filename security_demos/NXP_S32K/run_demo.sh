@@ -1,15 +1,13 @@
 #!/bin/bash
-# 1. Compile the vulnerable firmware
-echo "-------------------------------------------------------"
-echo "STEP 1: Compiling vulnerable S32K144 Firmware..."
-echo "-------------------------------------------------------"
-arm-none-eabi-gcc -fno-stack-protector -z execstack -mcpu=cortex-m4 \
-    -T firmware/linker.ld firmware/main.c -o firmware/vulnerable.elf -nostartfiles
+set -e
 
-# 2. Run the automated exploit via Robot Framework
-# This will show the logs directly in the terminal
-echo ""
-echo "-------------------------------------------------------"
-echo "STEP 2: Launching Renode and running the Buffer Overflow Exploit..."
-echo "-------------------------------------------------------"
-renode-test tests/exploit.robot
+echo "--- DIAGNOSTICS ---"
+echo "Renode version: $(renode --version)"
+echo "Current Dir: $(pwd)"
+echo "Checking files:"
+ls -l firmware/vulnerable.elf scripts/s32k144.repl tests/exploit.robot
+
+echo "--- RUNNING TEST ---"
+# -v means Verbose (shows Robot Framework internal steps)
+# --show-log prints the Renode log to the terminal if it fails
+renode-test -v --show-log tests/exploit.robot
