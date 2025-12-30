@@ -1,11 +1,11 @@
 // S32K144 Standalone Platform Definition
-// No 'using' lines to avoid path errors
+// Order is critical: NVIC must come before CPU
+
+nvic: IRQControllers.NVIC @ sysbus 0xE000E000
 
 cpu: CPU.CortexM @ sysbus
     cpuType: "cortex-m4f"
     nvic: nvic
-
-nvic: IRQControllers.NVIC @ sysbus 0xE000E000
 
 sram: Memory.MappedMemory @ sysbus 0x1FFF8000
     size: 0x00010000
@@ -15,3 +15,7 @@ flash: Memory.MappedMemory @ sysbus 0x00000000
 
 lpuart0: UART.NXP_LPUART @ sysbus 0x4006A000
     IRQ -> nvic@31
+
+sysbus:
+    init:
+        cpu VectorTableOffset 0x0
