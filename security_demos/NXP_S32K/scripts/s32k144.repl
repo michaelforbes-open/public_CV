@@ -1,5 +1,16 @@
-using "platforms/cpus/nxp-s32k144.repl"
+// S32K144 Standalone Definition
 
-sysbus:
-    init:
-        cpu VectorTableOffset 0x0
+cpu: CPU.CortexM @ sysbus
+    cpuType: "cortex-m4f"
+    nvic: nvic
+
+nvic: IRQControllers.NVIC @ sysbus 0xE000E000
+
+sram: Memory.MappedMemory @ sysbus 0x1FFF8000
+    size: 0x00010000
+
+flash: Memory.MappedMemory @ sysbus 0x00000000
+    size: 0x00080000
+
+lpuart0: UART.NXP_LPUART @ sysbus 0x4006A000
+    IRQ -> nvic@31
