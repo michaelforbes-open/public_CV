@@ -1,5 +1,5 @@
 // S32K144 Standalone Platform Definition
-// Order is critical: NVIC must come before CPU
+// No external dependencies
 
 nvic: IRQControllers.NVIC @ sysbus 0xE000E000
 
