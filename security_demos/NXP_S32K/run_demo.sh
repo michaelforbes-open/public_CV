@@ -1,13 +1,15 @@
 #!/bin/bash
 set -e
 
-echo "--- DIAGNOSTICS ---"
-echo "Renode version: $(renode --version)"
-echo "Current Dir: $(pwd)"
-echo "Checking files:"
-ls -l firmware/vulnerable.elf scripts/s32k144.repl tests/exploit.robot
+# 1. Get the absolute path of the current directory
+export PROJ_PATH=$(pwd)
+echo "Project Path: $PROJ_PATH"
 
-echo "--- RUNNING TEST ---"
-# -v means Verbose (shows Robot Framework internal steps)
-# --show-log prints the Renode log to the terminal if it fails
-renode-test -v --show-log tests/exploit.robot
+# 2. Compile the firmware
+echo "--- STEP 1: Compiling ---"
+arm-none-eabi-gcc -fno-stack-protector -z execstack -mcpu=cortex-m4 \
+    -T firmware/linker.ld firmware/main.c -o firmware/vulnerable.elf -nostartfiles
+
+# 3. Run the test with the 'include-log' flag
+echo "--- STEP 2: Running Exploit ---"
+renode-test --show-log tests/exploit.robot
