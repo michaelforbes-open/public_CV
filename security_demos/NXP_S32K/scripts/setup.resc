@@ -1,0 +1,10 @@
+mach create "S32K144-Vulnerable"
+machine LoadPlatformDescription @scripts/s32k144.repl
+
+# Redirect UART to a virtual file/terminal so we can see it in Codespaces
+showAnalyzer sysbus.lpuart0 Antmicro.Renode.Analyzers.LoggingUartAnalyzer
+
+sysbus LoadELF @firmware/vulnerable.elf
+
+# Start the simulation
+start
