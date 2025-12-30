@@ -1,9 +1,12 @@
-# Create the machine
-mach create "S32K144-Vulnerable"
+# Clear the emulation
+i @
+
+# Create the machine and name it 's32k'
+mach create "s32k"
 machine LoadPlatformDescription @scripts/s32k144.repl
 
-# Load the binary we just compiled
+# Load the binary
 sysbus LoadELF @firmware/vulnerable.elf
 
-# This line is critical for Robot Framework to "see" the UART
-showAnalyzer sysbus.lpuart0
+# Log UART output to the Renode log so we can debug if needed
+sysbus.lpuart0 CreateExecutionTracing "uart-trace"
