@@ -1,6 +1,4 @@
 // S32K144 Standalone Platform Definition
-// No external dependencies
-
 nvic: IRQControllers.NVIC @ sysbus 0xE000E000
 
 cpu: CPU.CortexM @ sysbus
@@ -15,7 +13,3 @@ flash: Memory.MappedMemory @ sysbus 0x00000000
 
 lpuart0: UART.NXP_LPUART @ sysbus 0x4006A000
     IRQ -> nvic@31
-
-sysbus:
-    init:
-        cpu VectorTableOffset 0x0
