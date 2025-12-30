@@ -1,0 +1,6 @@
+using "platforms/cpus/nxp-s32k144.repl"
+
+sysbus:
+    init:
+        # Ensure the CPU starts at the beginning of Flash
+        cpu VectorTableOffset 0x0
