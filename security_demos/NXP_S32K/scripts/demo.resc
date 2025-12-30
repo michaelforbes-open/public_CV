@@ -1,0 +1,16 @@
+# 1. Start a new emulation
+using "platforms/cpus/nxp-s32k144.repl"
+
+# 2. If the platform above fails, we define the UART manually
+# This ensures lpuart0 exists even if the library is missing
+# (Renode won't error if it already exists)
+machine LoadPlatformDescriptionFromString "lpuart0: UART.NXP_LPUART @ sysbus 0x4006A000 { IRQ -> nvic@31 }"
+
+# 3. Load the firmware
+sysbus LoadELF @firmware/vulnerable.elf
+
+# 4. Set the PC to the beginning of Flash
+sysbus.cpu VectorTableOffset 0x0
+
+# 5. Start the simulation
+start
