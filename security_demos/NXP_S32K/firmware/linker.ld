@@ -5,12 +5,8 @@ MEMORY
 }
 SECTIONS
 {
+    .vectors : { KEEP(*(.vectors)) } > FLASH
     .text : { *(.text*) } > FLASH
     .data : { *(.data*) } > SRAM AT > FLASH
     .bss  : { *(.bss*)  } > SRAM
-    .stack : 
-    {
-        . = ALIGN(8);
-        _stack_top = .;
-    } > SRAM
 }
