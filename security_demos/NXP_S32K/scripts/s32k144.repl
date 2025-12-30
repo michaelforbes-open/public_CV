@@ -1,4 +1,5 @@
-// S32K144 Standalone Definition
+// S32K144 Standalone Platform Definition
+// No 'using' lines to avoid path errors
 
 cpu: CPU.CortexM @ sysbus
     cpuType: "cortex-m4f"
