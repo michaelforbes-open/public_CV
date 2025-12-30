@@ -1,0 +1,10 @@
+{
+    "name": "Renode S32K Demo",
+    "build": { "dockerfile": "Dockerfile" },
+    "customizations": {
+        "vscode": {
+            "extensions": ["antmicro.renode"]
+        }
+    },
+    "postCreateCommand": "chmod +x run_demo.sh"
+}
