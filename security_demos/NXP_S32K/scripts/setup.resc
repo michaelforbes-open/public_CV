@@ -1,10 +1,9 @@
+# Create the machine
 mach create "S32K144-Vulnerable"
 machine LoadPlatformDescription @scripts/s32k144.repl
 
-# Redirect UART to a virtual file/terminal so we can see it in Codespaces
-showAnalyzer sysbus.lpuart0 Antmicro.Renode.Analyzers.LoggingUartAnalyzer
-
+# Load the binary we just compiled
 sysbus LoadELF @firmware/vulnerable.elf
 
-# Start the simulation
-start
+# This line is critical for Robot Framework to "see" the UART
+showAnalyzer sysbus.lpuart0
